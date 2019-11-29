@@ -29,53 +29,40 @@ window.onload = function () {
 			labelFontColor: "#666666"
 		}],
 
-	data: [
-	{
-		type: "line",
-		lineDashType: "dash",
-		showInLegend: true,     
-		toolTipContent : "Equilibrium Price: $50",
-		axisYType: "secondary",
-		axisYIndex: 1,
-		name: "Equilibrium Price",
-		xValueFormatString: "####",
-		dataPoints: [
-			{ x: 1, y: 50 },
-			{ x: 40, y: 50 },
-			{ x: 140, y: 50 }
-		]
-	},   
+	data: [   
 	{
 		type: "spline",
         showInLegend: true,
-        toolTipContent : "Demand Quantity (DQ): {x} <br/> Price: {y}",
+        toolTipContent : "<br/> Supply Quantity (SQ): {x} ",
 		axisYIndex: 1, //Defaults to Zero
-		name: "Demand Quantity",
+		name: "Supply Quantity",
 		xValueFormatString: "####",
 		dataPoints: [
 			{ x: 1, y: 4 },
-            { x: 40, y: 50 },      
+            { x: 40, y: 37.3 },
+            { x: 100, y: 360 },         
 			{ x: 125, y: 760 }
 		]
 	},
 	{
 		type: "spline",
         showInLegend: true,     
-        toolTipContent : "Supply Quantity (SQ): {x} <br/> Price: {y}",
+        toolTipContent : "<br/> Demand Quantity (DQ): {x} ",
 		axisYType: "secondary",
 		axisYIndex: 1, //When axisYType is secondary, axisYIndex indexes to secondary Y axis & not to primary Y axis
-        name: "Supply Quantity",
+        name: "Demmand Quantity",
 		xValueFormatString: "####",
 		dataPoints: [
             { x: 1, y: 760 },
-            { x: 40, y: 50 },
+            { x: 40, y: 33.3 },
+            { x: 100, y: 6.4 },
 			{ x: 125, y: 3.33 }
 		]
 	},
 	{
 		type: "spline",
         showInLegend: true,     
-        toolTipContent : "Equilibrium Price: 40 ",
+        toolTipContent : "<br/> Equilibrium Price: 40 ",
 		axisYType: "secondary",
 		axisYIndex: 1, //When axisYType is secondary, axisYIndex indexes to secondary Y axis & not to primary Y axis
         name: "Equilibrium Price",
@@ -88,25 +75,7 @@ window.onload = function () {
 
 	chart.render();
 
-	// document.getElementByName('price').onchange(){
-
-	// }
-
-
 	function scriptRender(){
 		chart.render();
 	}
-
-	function getChart(chartNum) {
-        var curSrc = $("#chartselector").attr('src');
-        if ( curSrc.includes('includes/') ) {
-            $("#chartselector").attr('src', 'includes/' + chartNum + '.js');
-            scriptRender();
-            }
-    //   if ( curSrc === 'http://example.com/williams.gif' ) {
-    //       $(this).attr('src', 'http://example.com/brown.gif');
-    //   }
-            
-        //$("#chartselector").
-        }
 }
