@@ -124,12 +124,12 @@ Date: Nove,ber 28 2019 -->
                 </div>
                 
                 <ul class="description">
-                <li>In the example above, <a tabindex="9" href="#" onClick='document.priceform.price[2].click();'><b>$23</b></a> is the <b>Equilibrium Price</b> of our product. As such, the <b>Supply Quantity (SQ)</b> is equal to the <b>Demand Quantity (DQ)</b>. </li>
+                <li>In the example above, <a tabindex="9" href="#" onClick='document.getElementById("price3").click();'><b>$23</b></a> is the <b>Equilibrium Price</b> of our product. As such, the <b>Supply Quantity (SQ)</b> is equal to the <b>Demand Quantity (DQ)</b>. </li>
                 <li>Throughout the lifecycle of a product, its  price is regulated by Supply and Demand forces until the <b>Equilibrium Price</b> is reached.</li>
                 <li>When <b>SQ is higher than DQ</b>, a product's price tends to move <b>lower</b>.
                 <li>Conversely, when <b>DQ is higher than SQ</b>, a product's price tends to move <b>higher</b>.                
-                <li>At <a tabindex="10" href="#" onClick='document.priceform.price[3].click();'><b>$30</b></a>, the <b>SQ</b> value of <b>25</b> is <i>above</i> the <b>DQ</b> value of <b>7</b>, which is indicative of a <b>falling</b> price. </li>               
-                <li>At <a tabindex="11" href="#" onClick='document.priceform.price[0].click();'><b>$15</b></a>, the <b>SQ</b> value of <b>7</b> is <i>below</i> the <b>DQ</b> value of <b>25</b>, which is indicative of an <b>increasing</b> price. </li>               
+                <li>At <a tabindex="10" href="#" onClick='document.getElementById("price4").click();'><b>$30</b></a>, the <b>SQ</b> value of <b>25</b> is <i>above</i> the <b>DQ</b> value of <b>7</b>, which is indicative of a <b>falling</b> price. </li>               
+                <li>At <a tabindex="11" href="#" onClick='document.getElementById("price1").click();'><b>$15</b></a>, the <b>SQ</b> value of <b>7</b> is <i>below</i> the <b>DQ</b> value of <b>25</b>, which is indicative of an <b>increasing</b> price. </li>               
                 <li>In this way, the market has a natural tendency to drive the price until <b>DQ = SQ</b> and <b>Equilibrium Price</b> is reached.</li>
             </ul>
         </div>
