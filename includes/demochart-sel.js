@@ -3,6 +3,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 $(document).ready(function () {
+
 	$('input[type=radio][name=price]').change(function() {
 	var thisVal = parseInt(this.value, 10);
 	
