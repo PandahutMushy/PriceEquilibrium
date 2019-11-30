@@ -30,7 +30,7 @@
  }
 
 .wikilogo {
-    background: url('http://localhost/priceequilibrium/images/enwiki.png');
+    background: url('/price-equilibrium/images/enwiki.png'); 
     width: 6em;
     height: 7em;
     display: inline-block;
